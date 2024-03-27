@@ -1,10 +1,10 @@
 package hello.springcore.order;
 
 import hello.springcore.discount.DiscountPolicy;
-import hello.springcore.discount.FixDiscountPolicy;
+//import hello.springcore.discount.FixDiscountPolicy;
 import hello.springcore.member.Member;
 import hello.springcore.member.MemberRepository;
-import hello.springcore.member.MemoryMemberRepository;
+//import hello.springcore.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService{
     private final MemberRepository memberRepository;
@@ -12,7 +12,7 @@ public class OrderServiceImpl implements OrderService{
 
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy){
         this.memberRepository = memberRepository;
-        this.discountPolicy = discountPolicy;;
+        this.discountPolicy = discountPolicy;
     }
 
     @Override
